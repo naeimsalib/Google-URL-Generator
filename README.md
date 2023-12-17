@@ -29,12 +29,16 @@ The web application is hosted on Heroku and can be accessed at the following URL
 To run the application locally:
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/naeimsalib/Google-URL-Generator.git
-2. Navigate to the cloned directory:
+3. Navigate to the cloned directory:
+   ```bash
     cd Google-URL-Generator
-3. Install the required dependencies:
+5. Install the required dependencies:
+   ```bash
     pip install -r requirements.txt
-4. Run the Flask app:
+7. Run the Flask app:
+   ```bash
     flask run
 
 
