@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search URL Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Google</span> Search URL Generator</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <form method="POST" class="box">
+            <div class="form-group">
+                <label for="search_query">Enter Search Query:</label>
+                <input type="text" class="form-control" name="search_query" placeholder="e.g., funny cat images">
+            </div>
+            <button type="submit" class="btn btn-primary">Generate URL</button>
+        </form>
+
+        {% if url %}
+            <div class="url-display">
+                <p>Generated URL: <a href="{{ url }}" target="_blank">{{ url }}</a></p>
+            </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Google Search URL Generator</p>
+    </footer>
+</body>
+</html>
