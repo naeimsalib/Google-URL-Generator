@@ -41,7 +41,6 @@ To run the application locally:
    ```bash
     flask run
 
-
 The application will be accessible at `http://localhost:5000`.
 
 ## Contributing
