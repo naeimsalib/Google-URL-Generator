@@ -3,8 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-API_KEY = "8057fe4b31mshd0baed97211d457p188f88jsnaf6f9d2012f7"  # Replace with your RapidAPI key
-API_HOST = "google-url-generator.p.rapidapi.com"  # Replace with your RapidAPI host
+API_KEY = "Enter-Your-Rapid-API-Key"  # Replace with your RapidAPI key
+API_HOST = "Enter-Your-RapidAPi-Host"  # Replace with your RapidAPI host
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
